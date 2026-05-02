@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeoDigitalWorld — Agencia Digital | Branding, Marketing, Copywriting y Formación</title>
+  <meta name="description" content="Agencia digital especializada en branding, marketing digital, copywriting y formación para pymes hispanohablantes. Transformamos tu marca en un referente de su sector.">
+  <meta name="keywords" content="agencia digital, branding, marketing digital, copywriting, formación digital, diseño de marca, SEO, pymes hispanohablantes, NeoDigitalWorld, Delaware">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.neodigitalworld.com/">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="NeoDigitalWorld — Agencia Digital | Branding, Marketing, Copywriting y Formación">
+  <meta property="og:description" content="Transformamos negocios con estrategia digital, branding de alto impacto, copywriting persuasivo y formación personalizada.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.neodigitalworld.com/">
+  <meta property="og:image" content="https://www.neodigitalworld.com/assets/og-image.png">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="NeoDigitalWorld">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@NeoDigitalWorld">
+  <meta name="twitter:title" content="NeoDigitalWorld — Agencia Digital | Branding, Marketing, Copywriting y Formación">
+  <meta name="twitter:description" content="Transformamos negocios con estrategia digital, branding de alto impacto y formación personalizada.">
+  <meta name="twitter:image" content="https://www.neodigitalworld.com/assets/og-image.png">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.neodigitalworld.com/#organization",
+        "name": "NeoDigitalWorld",
+        "url": "https://www.neodigitalworld.com",
+        "logo": "https://www.neodigitalworld.com/assets/logo.svg",
+        "email": "web@neodigitalworld.com",
+        "foundingDate": "2022",
+        "description": "Agencia digital especializada en branding, marketing digital, copywriting y formación para pymes hispanohablantes.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2093 Philadelphia Pike #7572",
+          "addressLocality": "Claymont",
+          "addressRegion": "DE",
+          "postalCode": "19703",
+          "addressCountry": "US"
+        },
+        "sameAs": [
+          "https://x.com/NeoDigitalWorld",
+          "https://www.instagram.com/neodigitalworldllc/"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios digitales",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Branding", "description": "Identidades visuales que generan reconocimiento y fidelidad de marca"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Marketing Digital", "description": "Estrategia integral: SEO, redes sociales, campañas de pago y analítica avanzada"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Copywriting", "description": "Textos persuasivos que conectan con tu audiencia y convierten visitas en clientes"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Formación Privada", "description": "Mentorías personalizadas para profesionales y equipos desde 500€"}}
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.neodigitalworld.com/#website",
+        "url": "https://www.neodigitalworld.com",
+        "name": "NeoDigitalWorld",
+        "publisher": {"@id": "https://www.neodigitalworld.com/#organization"},
+        "inLanguage": "es"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ══ NAV ══ -->
+  <nav id="nav">
+    <a href="#hero">
+      <img src="assets/logo.svg" alt="NeoDigitalWorld" class="nav-logo">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Servicios</a></li>
+      <li><a href="#branding">Branding</a></li>
+      <li><a href="#marketing">Marketing</a></li>
+      <li><a href="#copywriting">Copywriting</a></li>
+      <li><a href="#formacion">Formación</a></li>
+      <li><a href="#about">Nosotros</a></li>
+      <li><a href="#contact" class="nav-cta">Hablemos</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile nav overlay -->
+  <div class="nav-mobile">
+    <button class="nav-mobile-close" aria-label="Cerrar">✕</button>
+    <a href="#services">Servicios</a>
+    <a href="#branding">Branding</a>
+    <a href="#marketing">Marketing</a>
+    <a href="#copywriting">Copywriting</a>
+    <a href="#formacion">Formación</a>
+    <a href="#about">Nosotros</a>
+    <a href="#contact" class="btn-primary">Hablemos</a>
+  </div>
+
+  <!-- ══ HERO ══ -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Agencia Digital Premium</div>
+      <h1 class="hero-title">
+        Tu marca merece<br>
+        <span class="gradient-text">más que el promedio</span>
+      </h1>
+      <p class="hero-subtitle">
+        Estrategia, branding y formación para negocios que quieren crecer de verdad.
+        No seguimos tendencias — las creamos.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Empieza tu proyecto</a>
+        <a href="#services" class="btn-secondary">Ver servicios</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══ STATS ══ -->
+  <section id="stats">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <div class="stat-number gradient-text">
+          <span data-count="3" data-suffix="+">0+</span>
+        </div>
+        <div class="stat-label">Años de experiencia</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-number gradient-text">
+          <span data-count="4" data-suffix="">0</span>
+        </div>
+        <div class="stat-label">Servicios especializados</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-number gradient-text">
+          <span data-count="24" data-suffix="h">0h</span>
+        </div>
+        <div class="stat-label">Tiempo de respuesta</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-line"></div>
+
+  <!-- ══ SERVICES ══ -->
+  <section id="services">
+    <div class="section-header">
+      <span class="section-label reveal">Lo que hacemos</span>
+      <h2 class="section-title reveal">Servicios diseñados para<br><span class="gradient-text">hacer crecer tu negocio</span></h2>
+      <p class="section-subtitle reveal">Combinamos estrategia, creatividad y tecnología para transformar marcas en referentes de su sector.</p>
+    </div>
+    <div class="services-grid stagger-group">
+      <div class="service-card stagger-item">
+        <div class="service-icon">✦</div>
+        <h3>Branding</h3>
+        <p>Creamos identidades visuales que generan reconocimiento inmediato y fidelidad de marca. Desde el logotipo hasta el manual completo.</p>
+        <span class="service-tag">Identidad Visual</span>
+      </div>
+      <div class="service-card stagger-item">
+        <div class="service-icon">◈</div>
+        <h3>Marketing Digital</h3>
+        <p>Estrategia integral: SEO, redes sociales, campañas de pago y analítica avanzada. Resultados medibles, no promesas vacías.</p>
+        <span class="service-tag">Resultados medibles</span>
+      </div>
+      <div class="service-card stagger-item">
+        <div class="service-icon">✎</div>
+        <h3>Copywriting</h3>
+        <p>Textos que conectan con tu audiencia, transmiten tu valor real y convierten visitas en clientes. Porque las palabras también venden.</p>
+        <span class="service-tag">Copy que convierte</span>
+      </div>
+      <div class="service-card stagger-item">
+        <div class="service-icon">◉</div>
+        <h3>Formación Privada</h3>
+        <p>Cursos y mentorías 100% personalizados para profesionales y equipos que quieren dominar el mundo digital desde dentro.</p>
+        <span class="service-tag">Formación desde 500€</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-line"></div>
+
+  <!-- ══ BRANDING ══ -->
+  <section id="branding">
+    <div class="detail-section">
+      <div class="detail-grid">
+        <div class="reveal-left">
+          <span class="detail-label">01 — Branding</span>
+          <h2 class="detail-title">Una identidad que<br><span class="gradient-text">habla antes que tú</span></h2>
+          <p class="detail-text">
+            Tu marca es lo primero que ven tus clientes y lo último que deben olvidar.
+            Diseñamos identidades con carácter: coherentes, memorables y alineadas con tus objetivos de negocio.
+          </p>
+          <ul class="detail-features">
+            <li class="feature-item">Estrategia de marca y posicionamiento</li>
+            <li class="feature-item">Diseño de logotipo y sistema visual</li>
+            <li class="feature-item">Paleta de color, tipografía y tono de voz</li>
+            <li class="feature-item">Manual de marca completo</li>
+            <li class="feature-item">Aplicaciones: web, RRSS, papelería</li>
+          </ul>
+          <a href="#contact" class="btn-primary">Quiero mi identidad de marca</a>
+        </div>
+        <div class="reveal-right">
+          <div class="visual-card">
+            <div class="visual-icon">✦</div>
+            <div class="visual-title gradient-text">Branding Estratégico</div>
+            <div class="visual-sub">Identidad visual que convierte</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-line"></div>
+
+  <!-- ══ MARKETING DIGITAL ══ -->
+  <section id="marketing" class="alt">
+    <div class="detail-section">
+      <div class="detail-grid reverse">
+        <div class="reveal-right">
+          <span class="detail-label">02 — Marketing Digital</span>
+          <h2 class="detail-title">Visibilidad real,<br><span class="gradient-text">clientes reales</span></h2>
+          <p class="detail-text">
+            El marketing digital sin estrategia es ruido. Nosotros construimos ecosistemas digitales completos
+            donde cada acción está orientada a atraer, convertir y retener clientes.
+          </p>
+          <ul class="detail-features">
+            <li class="feature-item">SEO y posicionamiento orgánico</li>
+            <li class="feature-item">Gestión de redes sociales</li>
+            <li class="feature-item">Campañas de pago (Meta Ads, Google Ads)</li>
+            <li class="feature-item">Email marketing y automatización</li>
+            <li class="feature-item">Analítica, reporting y optimización continua</li>
+          </ul>
+          <a href="#contact" class="btn-primary">Impulsa mi negocio</a>
+        </div>
+        <div class="reveal-left">
+          <div class="visual-card">
+            <div class="visual-icon">◈</div>
+            <div class="visual-title gradient-text">Marketing 360°</div>
+            <div class="visual-sub">Estrategia que genera resultados</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-line"></div>
+
+  <!-- ══ COPYWRITING ══ -->
+  <section id="copywriting" class="alt">
+    <div class="detail-section">
+      <div class="detail-grid reverse">
+        <div class="reveal-right">
+          <span class="detail-label">03 — Copywriting</span>
+          <h2 class="detail-title">Palabras que<br><span class="gradient-text">convierten visitas en clientes</span></h2>
+          <p class="detail-text">
+            Un buen diseño sin buen copy es como un escaparate vacío.
+            Escribimos textos que conectan con tu audiencia, transmiten tu valor real
+            y guían al lector exactamente donde quieres que llegue.
+          </p>
+          <ul class="detail-features">
+            <li class="feature-item">Copy para web, landing pages y emails</li>
+            <li class="feature-item">Textos para redes sociales y anuncios</li>
+            <li class="feature-item">Storytelling de marca y propuesta de valor</li>
+            <li class="feature-item">SEO copywriting para posicionar en Google</li>
+            <li class="feature-item">Revisión y optimización de textos actuales</li>
+          </ul>
+          <a href="#contact" class="btn-primary">Quiero copy que venda</a>
+        </div>
+        <div class="reveal-left">
+          <div class="visual-card">
+            <div class="visual-icon">✎</div>
+            <div class="visual-title gradient-text">Copywriting Estratégico</div>
+            <div class="visual-sub">Textos que conectan y convierten</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-line"></div>
+
+  <!-- ══ FORMACIÓN ══ -->
+  <section id="formacion">
+    <div class="detail-section">
+      <div class="detail-grid">
+        <div class="reveal-left">
+          <span class="detail-label">04 — Formación Privada</span>
+          <h2 class="detail-title">Aprende lo que<br><span class="gradient-text">realmente funciona</span></h2>
+          <p class="detail-text">
+            Formación privada y totalmente personalizada para profesionales, emprendedores y equipos.
+            Sin cursos genéricos. Sin teoría inútil. Solo lo que necesitas para avanzar.
+          </p>
+          <ul class="detail-features">
+            <li class="feature-item">Diagnóstico inicial y plan personalizado</li>
+            <li class="feature-item">Sesiones 1:1 o para equipos</li>
+            <li class="feature-item">Marketing digital, branding y estrategia</li>
+            <li class="feature-item">Herramientas y recursos exclusivos</li>
+            <li class="feature-item">Soporte continuo durante el proceso</li>
+          </ul>
+          <div class="price-highlight">
+            <span class="price-from">Desde</span>
+            <span class="price-amount gradient-text">500€</span>
+            <span class="price-note">— adaptado a tus necesidades</span>
+          </div>
+          <a href="#contact" class="btn-primary">Solicitar formación privada</a>
+        </div>
+        <div class="reveal-right">
+          <div class="visual-card">
+            <div class="visual-icon">◉</div>
+            <div class="visual-title gradient-text">Formación a Medida</div>
+            <div class="visual-sub">Mentoría privada desde 500€</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-line"></div>
+
+  <!-- ══ ABOUT ══ -->
+  <section id="about">
+    <div class="about-inner">
+      <span class="section-label reveal">Quiénes somos</span>
+      <p class="about-quote reveal">
+        Somos <em>NeoDigitalWorld</em>: una agencia digital que combina
+        estrategia de negocio con <em>ejecución impecable</em>.
+      </p>
+      <p class="about-text reveal">
+        Fundada en Delaware, EE.UU., trabajamos con negocios de toda Europa y Latinoamérica.
+        No somos generalistas: somos especialistas en hacer que las marcas destaquen,
+        conecten y crezcan en el entorno digital más competitivo de la historia.
+        Cada proyecto es único porque cada negocio lo es.
+      </p>
+      <div class="values-grid stagger-group">
+        <div class="value-card stagger-item">
+          <div class="value-icon">⚡</div>
+          <h4>Estrategia primero</h4>
+          <p>Nada que hacemos es por intuición. Todo parte de datos, análisis y objetivos claros.</p>
+        </div>
+        <div class="value-card stagger-item">
+          <div class="value-icon">◎</div>
+          <h4>Resultados medibles</h4>
+          <p>Métricas reales, transparencia total y reporting periódico en cada proyecto.</p>
+        </div>
+        <div class="value-card stagger-item">
+          <div class="value-icon">✦</div>
+          <h4>Calidad sin concesiones</h4>
+          <p>Preferimos hacer menos cosas y hacerlas extraordinariamente bien.</p>
+        </div>
+        <div class="value-card stagger-item">
+          <div class="value-icon">∞</div>
+          <h4>Relación a largo plazo</h4>
+          <p>No buscamos clientes de un proyecto. Buscamos socios de crecimiento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-line"></div>
+
+  <!-- ══ CONTACT ══ -->
+  <section id="contact">
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <span class="section-label">Contacto</span>
+        <h2>Hablemos de<br><span class="gradient-text">tu proyecto</span></h2>
+        <p>
+          Cuéntanos en qué estás trabajando y cómo podemos ayudarte.
+          Respondemos en menos de 24 horas.
+        </p>
+
+        <div class="contact-detail">
+          <div class="contact-icon">✉</div>
+          <div class="contact-detail-text">
+            <strong>Email</strong>
+            <span><a href="mailto:web@neodigitalworld.com">web@neodigitalworld.com</a></span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">📍</div>
+          <div class="contact-detail-text">
+            <strong>Dirección legal</strong>
+            <span>2093 Philadelphia Pike #7572<br>Claymont, DE 19703<br>Delaware, Estados Unidos</span>
+          </div>
+        </div>
+
+        <div class="contact-social">
+          <a href="https://x.com/NeoDigitalWorld" target="_blank" rel="noopener" class="social-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.256 5.626 5.908-5.626zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            @NeoDigitalWorld
+          </a>
+          <a href="https://www.instagram.com/neodigitalworldllc/" target="_blank" rel="noopener" class="social-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            @neodigitalworldllc
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap reveal-right">
+        <!-- FormSubmit.co — sends to web@neodigitalworld.com without backend -->
+        <form
+          id="contact-form"
+          action="https://formsubmit.co/web@neodigitalworld.com"
+          method="POST"
+        >
+          <!-- FormSubmit config -->
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde NeoDigitalWorld.com">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://www.neodigitalworld.com/?sent=1">
+          <input type="text" name="_honey" style="display:none">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nombre *</label>
+              <input type="text" id="name" name="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="company">Empresa / Proyecto</label>
+            <input type="text" id="company" name="empresa" placeholder="Nombre de tu empresa">
+          </div>
+
+          <div class="form-group">
+            <label for="service">Servicio de interés *</label>
+            <select id="service" name="servicio" required>
+              <option value="" disabled selected>Selecciona un servicio</option>
+              <option value="Branding">Branding / Identidad visual</option>
+              <option value="Marketing Digital">Marketing Digital</option>
+              <option value="Formación Privada">Formación Privada</option>
+              <option value="Varios servicios">Varios servicios</option>
+              <option value="Consulta general">Consulta general</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Cuéntanos tu proyecto *</label>
+            <textarea id="message" name="mensaje" placeholder="Describe brevemente lo que necesitas y tus objetivos..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Enviar mensaje →</button>
+
+          <p style="font-size:0.75rem;color:var(--text-muted);margin-top:14px;text-align:center;">
+            Al enviar aceptas nuestra <a href="privacy-policy.html" style="color:var(--accent);">Política de Privacidad</a>.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CTA BAND ══ -->
+  <section id="cta-band">
+    <div class="cta-band-inner">
+      <h2 class="cta-band-title reveal">¿Listo para que tu negocio<br><span class="gradient-text">deje de pasar desapercibido?</span></h2>
+      <p class="cta-band-sub reveal">Primera consulta sin compromiso. Respondemos en menos de 24 horas.</p>
+      <a href="#contact" class="btn-primary reveal">Empieza tu proyecto →</a>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="footer-top">
+      <img src="assets/logo.svg" alt="NeoDigitalWorld" class="footer-logo">
+      <nav class="footer-links">
+        <a href="privacy-policy.html">Privacidad</a>
+        <a href="terms-of-service.html">Términos</a>
+        <a href="cookie-policy.html">Cookies</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 NeoDigitalWorld LLC. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ══ COOKIE BANNER ══ -->
+  <div id="cookie-banner" role="dialog" aria-label="Aviso de cookies">
+    <p>
+      Usamos cookies propias para el funcionamiento de la web. No utilizamos cookies de terceros con fines publicitarios.
+      Más info en nuestra <a href="cookie-policy.html">Política de Cookies</a>.
+    </p>
+    <div class="cookie-actions">
+      <button id="cookie-accept" class="btn-cookie-accept">Aceptar</button>
+      <button id="cookie-reject" class="btn-cookie-reject">Rechazar</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

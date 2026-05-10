@@ -435,9 +435,12 @@
         >
           <!-- FormSubmit config -->
           <input type="hidden" name="_subject" value="Nuevo mensaje desde NeoDigitalWorld.com">
-          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_captcha" value="true">
           <input type="hidden" name="_next" value="https://neodigitalworld.com/?sent=1">
-          <input type="text" name="_honey" style="display:none">
+          <!-- Honeypot: campo invisible que solo los bots rellenan -->
+          <input type="text" name="website" id="website" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
+          <!-- Timestamp para detectar envíos instantáneos (bots) -->
+          <input type="hidden" name="_form_time" id="_form_time">
 
           <div class="form-row">
             <div class="form-group">

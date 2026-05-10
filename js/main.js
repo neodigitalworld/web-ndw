@@ -193,9 +193,29 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // ── Contact form — prevent double submit ──
+  // ── Contact form — anti-spam + prevent double submit ──
   const form = document.getElementById('contact-form');
+
+  // Registrar el momento en que la página carga (para detectar bots que envían al instante)
+  const formTimeField = document.getElementById('_form_time');
+  if (formTimeField) formTimeField.value = Date.now();
+
   form?.addEventListener('submit', e => {
+    // Bloquear si el honeypot tiene contenido (lo llenó un bot)
+    const honeypot = document.getElementById('website');
+    if (honeypot && honeypot.value.trim() !== '') {
+      e.preventDefault();
+      return;
+    }
+
+    // Bloquear si el formulario se envía en menos de 3 segundos (bot)
+    const loadTime = parseInt(formTimeField?.value || '0');
+    if (loadTime && Date.now() - loadTime < 3000) {
+      e.preventDefault();
+      return;
+    }
+
+    // Prevenir doble envío
     const btn = form.querySelector('.btn-submit');
     if (btn) {
       btn.disabled = true;

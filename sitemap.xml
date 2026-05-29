@@ -52,23 +52,4 @@
     <priority>0.7</priority>
   </url>
 
-  <url>
-    <loc>https://neodigitalworld.com/privacy-policy</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://neodigitalworld.com/terms-of-service</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://neodigitalworld.com/cookie-policy</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
 </urlset>

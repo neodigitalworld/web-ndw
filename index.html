@@ -33,6 +33,51 @@
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué servicios ofrece NeoDigitalWorld?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "NeoDigitalWorld es una agencia digital especializada en cuatro áreas: branding e identidad visual para empresas, marketing digital (SEO, redes sociales, campañas de pago y analítica), copywriting profesional en español (webs, landing pages, emails y anuncios) y formación digital privada para emprendedores, pymes y equipos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Trabajáis con empresas de España y Latinoamérica?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Trabajamos con negocios de España, México, Argentina, Colombia, Perú y cualquier país hispanohablante. Todas nuestras sesiones y servicios se realizan en español y de forma remota, sin necesidad de presencia física."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta contratar una agencia digital como NeoDigitalWorld?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Los precios dependen del servicio y el alcance del proyecto. La formación privada comienza desde 500€. Los proyectos de branding, marketing digital y copywriting se presupuestan de forma personalizada según las necesidades de cada cliente. Contáctanos para recibir una propuesta sin compromiso."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tiempo tarda en verse el resultado del marketing digital?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende del canal. Los anuncios de pago (Google Ads, Meta Ads) generan resultados desde la primera semana. El SEO necesita entre 3 y 6 meses para mostrar resultados consistentes. El branding y el copywriting tienen impacto desde el primer día en la percepción de la marca, aunque la acumulación de resultados se nota a medio plazo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo puedo contactar con NeoDigitalWorld?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Puedes contactarnos a través del formulario de contacto de nuestra web o escribirnos directamente a web@neodigitalworld.com. Respondemos en menos de 24 horas."
+            }
+          }
+        ]
+      },
+      {
         "@type": "Organization",
         "@id": "https://neodigitalworld.com/#organization",
         "name": "NeoDigitalWorld",
@@ -71,6 +116,98 @@
         "name": "NeoDigitalWorld",
         "publisher": {"@id": "https://neodigitalworld.com/#organization"},
         "inLanguage": "es"
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://neodigitalworld.com/#service",
+        "name": "NeoDigitalWorld — Agencia Digital",
+        "url": "https://neodigitalworld.com",
+        "logo": "https://neodigitalworld.com/assets/logo.svg",
+        "image": "https://neodigitalworld.com/assets/og-image.png",
+        "email": "web@neodigitalworld.com",
+        "description": "Agencia digital especializada en branding, marketing digital, copywriting y formación privada para pymes y emprendedores hispanohablantes.",
+        "priceRange": "€€",
+        "currenciesAccepted": "EUR, USD",
+        "paymentAccepted": "Transferencia bancaria, tarjeta de crédito",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2093 Philadelphia Pike #7572",
+          "addressLocality": "Claymont",
+          "addressRegion": "DE",
+          "postalCode": "19703",
+          "addressCountry": "US"
+        },
+        "areaServed": [
+          {"@type": "Country", "name": "España"},
+          {"@type": "Country", "name": "México"},
+          {"@type": "Country", "name": "Argentina"},
+          {"@type": "Country", "name": "Colombia"},
+          {"@type": "Country", "name": "Perú"},
+          {"@type": "Country", "name": "Chile"},
+          {"@type": "Country", "name": "Estados Unidos"}
+        ],
+        "knowsLanguage": "es",
+        "serviceType": [
+          "Branding e Identidad Visual",
+          "Marketing Digital para Pymes",
+          "Copywriting Profesional",
+          "Formación Digital Privada"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios de NeoDigitalWorld",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Branding para Empresas",
+                "url": "https://neodigitalworld.com/servicios/branding-para-empresas.html",
+                "description": "Diseño de identidad visual estratégica: logotipo, paleta de colores, tipografía, tono de voz y manual de marca completo."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Marketing Digital para Pymes",
+                "url": "https://neodigitalworld.com/servicios/marketing-digital-para-pymes.html",
+                "description": "Estrategia integral de marketing digital: SEO, redes sociales, campañas de pago (Google Ads, Meta Ads) y analítica avanzada."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Copywriting Profesional",
+                "url": "https://neodigitalworld.com/servicios/copywriting-profesional.html",
+                "description": "Textos persuasivos en español para webs, landing pages, emails, anuncios y redes sociales."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Formación Digital Privada",
+                "url": "https://neodigitalworld.com/servicios/formacion-digital-privada.html",
+                "description": "Mentoría y formación 100% personalizada en marketing digital, branding y estrategia para emprendedores y equipos. Desde 500€.",
+                "offers": {
+                  "@type": "Offer",
+                  "priceCurrency": "EUR",
+                  "priceSpecification": {
+                    "@type": "PriceSpecification",
+                    "minPrice": "500",
+                    "priceCurrency": "EUR"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "sameAs": [
+          "https://x.com/NeoDigitalWorld",
+          "https://www.instagram.com/neodigitalworldllc/"
+        ]
       }
     ]
   }
@@ -96,11 +233,11 @@
     </a>
     <ul class="nav-links">
       <li><a href="#services">Servicios</a></li>
-      <li><a href="#branding">Branding</a></li>
-      <li><a href="#marketing">Marketing</a></li>
-      <li><a href="#copywriting">Copywriting</a></li>
-      <li><a href="#formacion">Formación</a></li>
-      <li><a href="#about">Nosotros</a></li>
+      <li><a href="servicios/branding-para-empresas.html">Branding</a></li>
+      <li><a href="servicios/marketing-digital-para-pymes.html">Marketing</a></li>
+      <li><a href="servicios/copywriting-profesional.html">Copywriting</a></li>
+      <li><a href="servicios/formacion-digital-privada.html">Formación</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
       <li><a href="#contact" class="nav-cta">Hablemos</a></li>
     </ul>
     <button class="nav-toggle" aria-label="Menú">
@@ -112,11 +249,11 @@
   <div class="nav-mobile">
     <button class="nav-mobile-close" aria-label="Cerrar">✕</button>
     <a href="#services">Servicios</a>
-    <a href="#branding">Branding</a>
-    <a href="#marketing">Marketing</a>
-    <a href="#copywriting">Copywriting</a>
-    <a href="#formacion">Formación</a>
-    <a href="#about">Nosotros</a>
+    <a href="servicios/branding-para-empresas.html">Branding</a>
+    <a href="servicios/marketing-digital-para-pymes.html">Marketing</a>
+    <a href="servicios/copywriting-profesional.html">Copywriting</a>
+    <a href="servicios/formacion-digital-privada.html">Formación</a>
+    <a href="blog/index.html">Blog</a>
     <a href="#contact" class="btn-primary">Hablemos</a>
   </div>
 
@@ -485,6 +622,40 @@
     </div>
   </section>
 
+  <!-- ══ FAQ ══ -->
+  <section id="faq" style="background:var(--bg2);">
+    <div style="max-width:800px;margin:0 auto;">
+      <div class="section-header">
+        <span class="section-label reveal">Preguntas frecuentes</span>
+        <h2 class="section-title reveal">Todo lo que necesitas<br><span class="gradient-text">saber antes de empezar</span></h2>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:0;">
+        <div class="reveal" style="border-bottom:1px solid var(--card-border);padding:28px 0;">
+          <h3 style="font-size:1rem;font-weight:700;margin-bottom:14px;">¿Qué servicios ofrece NeoDigitalWorld?</h3>
+          <p style="color:var(--text-muted);line-height:1.8;font-size:0.95rem;margin:0;">Somos una agencia digital especializada en cuatro áreas: <a href="servicios/branding-para-empresas.html" style="color:var(--accent)">branding e identidad visual</a>, <a href="servicios/marketing-digital-para-pymes.html" style="color:var(--accent)">marketing digital</a> (SEO, redes sociales y campañas de pago), <a href="servicios/copywriting-profesional.html" style="color:var(--accent)">copywriting profesional</a> y <a href="servicios/formacion-digital-privada.html" style="color:var(--accent)">formación digital privada</a> para emprendedores y equipos.</p>
+        </div>
+        <div class="reveal" style="border-bottom:1px solid var(--card-border);padding:28px 0;">
+          <h3 style="font-size:1rem;font-weight:700;margin-bottom:14px;">¿Trabajáis con empresas de España y Latinoamérica?</h3>
+          <p style="color:var(--text-muted);line-height:1.8;font-size:0.95rem;margin:0;">Sí. Trabajamos con negocios de España, México, Argentina, Colombia, Perú y cualquier país hispanohablante. Todas nuestras sesiones y servicios se realizan en español y de forma remota.</p>
+        </div>
+        <div class="reveal" style="border-bottom:1px solid var(--card-border);padding:28px 0;">
+          <h3 style="font-size:1rem;font-weight:700;margin-bottom:14px;">¿Cuánto cuesta contratar vuestros servicios?</h3>
+          <p style="color:var(--text-muted);line-height:1.8;font-size:0.95rem;margin:0;">Los precios dependen del servicio y el alcance. La formación privada comienza desde 500€. Los proyectos de branding, marketing y copywriting se presupuestan de forma personalizada. Contáctanos para recibir una propuesta sin compromiso adaptada a tu negocio.</p>
+        </div>
+        <div class="reveal" style="border-bottom:1px solid var(--card-border);padding:28px 0;">
+          <h3 style="font-size:1rem;font-weight:700;margin-bottom:14px;">¿Cuánto tiempo tarda en verse el resultado del marketing digital?</h3>
+          <p style="color:var(--text-muted);line-height:1.8;font-size:0.95rem;margin:0;">Depende del canal. Los anuncios de pago generan resultados desde la primera semana. El SEO necesita entre 3 y 6 meses para mostrar resultados consistentes. El branding tiene impacto inmediato en la percepción de la marca con acumulación de resultados a medio plazo.</p>
+        </div>
+        <div class="reveal" style="padding:28px 0;">
+          <h3 style="font-size:1rem;font-weight:700;margin-bottom:14px;">¿Cómo puedo contactar con NeoDigitalWorld?</h3>
+          <p style="color:var(--text-muted);line-height:1.8;font-size:0.95rem;margin:0;">Puedes usar el formulario de contacto de esta página o escribirnos directamente a <a href="mailto:web@neodigitalworld.com" style="color:var(--accent)">web@neodigitalworld.com</a>. Respondemos en menos de 24 horas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-line"></div>
+
   <!-- ══ CTA BAND ══ -->
   <section id="cta-band">
     <div class="cta-band-inner">
@@ -496,16 +667,40 @@
 
   <!-- ══ FOOTER ══ -->
   <footer>
-    <div class="footer-top">
-      <img src="assets/logo.svg" alt="NeoDigitalWorld" class="footer-logo">
-      <nav class="footer-links">
-        <a href="privacy-policy.html">Privacidad</a>
-        <a href="terms-of-service.html">Términos</a>
-        <a href="cookie-policy.html">Cookies</a>
-      </nav>
+    <div class="footer-top" style="flex-direction:column;gap:40px;">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:32px;width:100%;">
+        <img src="assets/logo.svg" alt="NeoDigitalWorld" class="footer-logo">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:32px;flex:1;max-width:700px;">
+          <div>
+            <p style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent);margin-bottom:14px;">Servicios</p>
+            <nav style="display:flex;flex-direction:column;gap:10px;">
+              <a href="servicios/branding-para-empresas.html" style="font-size:0.875rem;color:var(--text-muted);transition:color 0.3s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">Branding para empresas</a>
+              <a href="servicios/marketing-digital-para-pymes.html" style="font-size:0.875rem;color:var(--text-muted);transition:color 0.3s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">Marketing digital</a>
+              <a href="servicios/copywriting-profesional.html" style="font-size:0.875rem;color:var(--text-muted);transition:color 0.3s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">Copywriting profesional</a>
+              <a href="servicios/formacion-digital-privada.html" style="font-size:0.875rem;color:var(--text-muted);transition:color 0.3s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">Formación digital privada</a>
+            </nav>
+          </div>
+          <div>
+            <p style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent);margin-bottom:14px;">Recursos</p>
+            <nav style="display:flex;flex-direction:column;gap:10px;">
+              <a href="blog/index.html" style="font-size:0.875rem;color:var(--text-muted);transition:color 0.3s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">Blog de marketing</a>
+              <a href="blog/que-es-el-branding-y-por-que-lo-necesita-tu-empresa.html" style="font-size:0.875rem;color:var(--text-muted);transition:color 0.3s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">¿Qué es el branding?</a>
+              <a href="blog/como-hacer-marketing-digital-para-pymes-guia-completa.html" style="font-size:0.875rem;color:var(--text-muted);transition:color 0.3s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">Marketing digital para pymes</a>
+            </nav>
+          </div>
+          <div>
+            <p style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent);margin-bottom:14px;">Legal</p>
+            <nav style="display:flex;flex-direction:column;gap:10px;">
+              <a href="privacy-policy.html" style="font-size:0.875rem;color:var(--text-muted);transition:color 0.3s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">Privacidad</a>
+              <a href="terms-of-service.html" style="font-size:0.875rem;color:var(--text-muted);transition:color 0.3s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">Términos</a>
+              <a href="cookie-policy.html" style="font-size:0.875rem;color:var(--text-muted);transition:color 0.3s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">Cookies</a>
+            </nav>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 NeoDigitalWorld LLC. Todos los derechos reservados.</p>
+      <p>© 2026 NeoDigitalWorld LLC — Agencia digital para pymes hispanohablantes. Todos los derechos reservados.</p>
     </div>
   </footer>
 
